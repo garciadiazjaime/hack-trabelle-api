@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
 const PhotoSchema = new mongoose.Schema({
-  url: String,
-  conf: Object,
+  image: String,
+  settings: Object,
   gps: Object,
 });
 
-const GrpnEvent = mongoose.model('photo', PhotoSchema);
+const PhotoModel = mongoose.model('photo', PhotoSchema);
 
-module.exports = GrpnEvent;
+module.exports = PhotoModel;

@@ -17,7 +17,7 @@ const config = convict({
   port: {
     doc: 'The port to bind.',
     format: 'port',
-    default: 8000,
+    default: 3030,
     env: 'PORT',
   },
   db: {
@@ -28,6 +28,14 @@ const config = convict({
       env: 'DB_URL',
     },
   },
+  canon: {
+    url: {
+      doc: 'Canon API',
+      format: '*',
+      default: 'http://192.168.1.2:8080',
+      env: 'CCAPI_URL',
+    },
+  }
 });
 
 module.exports = config;

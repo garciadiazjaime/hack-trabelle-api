@@ -1,12 +1,7 @@
-const EventModel = require('../model/photoModel')
+const PhotoModel = require('../model/photoModel')
 
-async function savePhoto(event) {
-  const query = {uuid: event.uuid}
-  const result = await EventModel.findOne(query)
-  if (!result) {
-    return new EventModel(event).save()
-  }
-  return null
+async function savePhoto(photo) {
+  return new PhotoModel(photo).save()
 }
 
 module.exports.savePhoto = savePhoto
