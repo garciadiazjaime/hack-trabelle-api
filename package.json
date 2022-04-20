@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
-    "convict": "^4.4.1",
+    "convict": "^6.2.2",
     "cors": "^2.8.5",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
