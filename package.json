@@ -14,7 +14,7 @@
     "body-parser": "^1.18.2",
     "convict": "^4.4.1",
     "cors": "^2.8.5",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "express-graphql": "^0.6.11",
     "graphql": "^0.11.7",
     "mongoose": "^4.13.2",
